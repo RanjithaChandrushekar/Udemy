@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="shopCart.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            udemy
+        </div>
+
+
+        <!-- Navigation Links -->
+        <a href="#" class="nav-link">Find Courses</a>
+
+        <a href="#" class="nav-link">Get Certified</a>
+
+        <a href="#" class="nav-link">Subscribe</a>
+
+
+        <!-- Search Box -->
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text"
+                id="searchInput"
+                placeholder="Search for anything">
+
+        </div>
+
+
+        <!-- Right Navigation -->
+
+        <div class="right-nav">
+
+            <a href="#">Udemy Business</a>
+
+            <a href="#">Teach on Udemy</a>
+
+            <i class="fa-solid fa-cart-shopping cart-icon"></i>
+
+
+            <button class="login-btn">
+                Log in
+            </button>
+
+
+            <button class="signup-btn">
+                Sign up
+            </button>
+
+
+            <button class="language-btn">
+
+                <i class="fa-solid fa-globe"></i>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="container">
+
+
+        <!-- Shopping Cart Title -->
+
+        <h1>Shopping Cart</h1>
+
+
+        <!-- Empty Cart Message -->
+
+        <p class="empty-cart">
+
+            <strong>Your cart is empty</strong>
+
+            – let's change that. Time to learn some new skills!
+
+        </p>
+
+
+
+        <!-- ================= LEARNERS VIEWING SECTION ================= -->
+
+        <section class="learners-section">
+
+            <h2>Learners are viewing</h2>
+
+
+            <!-- SLIDER -->
+
+            <div class="course-slider">
+
+
+                <!-- LEFT ARROW -->
+
+                <button class="slider-btn left-arrow"
+                    id="leftArrow">
+
+                    <i class="fa-solid fa-chevron-left"></i>
+
+                </button>
+
+
+
+                <!-- COURSE TRACK -->
+
+                <div class="course-track"
+                    id="courseTrack">
+
+
+                    <!-- ================= COURSE 1 ================= -->
+
+                    <div class="course-card">
+
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=800&q=80"
+                            alt="PMP Course">
+
+                        <h3>
+                            PMP Exam Prep Course 35 PDUs/Hours Updated for the 2026 Exam
+                        </h3>
+
+                        <p class="author">
+                            TIA Training, Andrew Ramdayal
+                        </p>
+
+                        <div class="rating">
+
+                            <span class="rating-number">
+                                4.7
+                            </span>
+
+                            <span class="stars">
+                                ★★★★★
+                            </span>
+
+                            <span>
+                                (19,813)
+                            </span>
+
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹399.00
+                            </span>
+
+                            <span class="old-price">
+                                ₹3,099.00
+                            </span>
+
+                        </div>
+
+                        <div class="badges">
+
+                            <span class="premium">
+                                ✧ Premium
+                            </span>
+
+                            <span class="bestseller">
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= COURSE 2 ================= -->
+
+                    <div class="course-card">
+
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=800&q=80"
+                            alt="Claude Code">
+
+                        <h3>
+                            The Complete Claude Code & Claude Cowork Masterclass [2026]
+                        </h3>
+
+                        <p class="author">
+                            Prof. Ryan Ahmed, PhD, MBA
+                        </p>
+
+                        <div class="rating">
+
+                            <span class="rating-number">
+                                4.6
+                            </span>
+
+                            <span class="stars">
+                                ★★★★★
+                            </span>
+
+                            <span>
+                                (7,964)
+                            </span>
+
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹399.00
+                            </span>
+
+                            <span class="old-price">
+                                ₹1,239.00
+                            </span>
+
+                        </div>
+
+                        <div class="badges">
+
+                            <span class="premium">
+                                ✧ Premium
+                            </span>
+
+                            <span class="bestseller">
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= COURSE 3 ================= -->
+
+                    <div class="course-card">
+
+                        <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+                            alt="AI Coder">
+
+                        <h3>
+                            AI Coder: Complete Claude Code & Coding Agents Course
+                        </h3>
+
+                        <p class="author">
+                            Licency, Ed Donner
+                        </p>
+
+                        <div class="rating">
+
+                            <span class="rating-number">
+                                4.7
+                            </span>
+
+                            <span class="stars">
+                                ★★★★★
+                            </span>
+
+                            <span>
+                                (10,089)
+                            </span>
+
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹399.00
+                            </span>
+
+                            <span class="old-price">
+                                ₹799.00
+                            </span>
+
+                        </div>
+
+                        <div class="badges">
+
+                            <span class="premium">
+                                ✧ Premium
+                            </span>
+
+                            <span class="bestseller">
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= COURSE 4 ================= -->
+
+                    <div class="course-card">
+
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+                            alt="100 Days Bootcamp">
+
+                        <h3>
+                            100 Days Bootcamp: Complete Learning Journey
+                        </h3>
+
+                        <p class="author">
+                            Dr. Angela Yu
+                        </p>
+
+                        <div class="rating">
+
+                            <span class="rating-number">
+                                4.7
+                            </span>
+
+                            <span class="stars">
+                                ★★★★★
+                            </span>
+
+                            <span>
+                                (35,455)
+                            </span>
+
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹399.00
+                            </span>
+
+                            <span class="old-price">
+                                ₹1,299.00
+                            </span>
+
+                        </div>
+
+                        <div class="badges">
+
+                            <span class="premium">
+                                ✧ Premium
+                            </span>
+
+                            <span class="bestseller">
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= COURSE 5 ================= -->
+
+                    <div class="course-card">
+
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                            alt="Web Development">
+
+                        <h3>
+                            The Complete Web Development Bootcamp
+                        </h3>
+
+                        <p class="author">
+                            Professional Web Developer
+                        </p>
+
+                        <div class="rating">
+
+                            <span class="rating-number">
+                                4.8
+                            </span>
+
+                            <span class="stars">
+                                ★★★★★
+                            </span>
+
+                            <span>
+                                (24,560)
+                            </span>
+
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹399.00
+                            </span>
+
+                            <span class="old-price">
+                                ₹2,999.00
+                            </span>
+
+                        </div>
+
+                        <div class="badges">
+
+                            <span class="premium">
+                                ✧ Premium
+                            </span>
+
+                            <span class="bestseller">
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= COURSE 6 ================= -->
+
+                    <div class="course-card">
+
+                        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+                            alt="JavaScript Course">
+
+                        <h3>
+                            Complete JavaScript Course From Zero to Expert
+                        </h3>
+
+                        <p class="author">
+                            Jonas Schmedtmann
+                        </p>
+
+                        <div class="rating">
+
+                            <span class="rating-number">
+                                4.8
+                            </span>
+
+                            <span class="stars">
+                                ★★★★★
+                            </span>
+
+                            <span>
+                                (15,420)
+                            </span>
+
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹399.00
+                            </span>
+
+                            <span class="old-price">
+                                ₹2,499.00
+                            </span>
+
+                        </div>
+
+                        <div class="badges">
+
+                            <span class="premium">
+                                ✧ Premium
+                            </span>
+
+                            <span class="bestseller">
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= COURSE 7 ================= -->
+
+                    <div class="course-card">
+
+                        <img src="https://images.unsplash.com/photo-1516321165247-4aa89a48be28?auto=format&fit=crop&w=800&q=80"
+                            alt="Python Course">
+
+                        <h3>
+                            Complete Python Programming Bootcamp
+                        </h3>
+
+                        <p class="author">
+                            Jose Portilla
+                        </p>
+
+                        <div class="rating">
+
+                            <span class="rating-number">
+                                4.7
+                            </span>
+
+                            <span class="stars">
+                                ★★★★★
+                            </span>
+
+                            <span>
+                                (22,154)
+                            </span>
+
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹399.00
+                            </span>
+
+                            <span class="old-price">
+                                ₹3,199.00
+                            </span>
+
+                        </div>
+
+                        <div class="badges">
+
+                            <span class="premium">
+                                ✧ Premium
+                            </span>
+
+                            <span class="bestseller">
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ================= COURSE 8 ================= -->
+
+                    <div class="course-card">
+
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                            alt="Data Science">
+
+                        <h3>
+                            Data Science and Machine Learning Bootcamp
+                        </h3>
+
+                        <p class="author">
+                            Data Science Academy
+                        </p>
+
+                        <div class="rating">
+
+                            <span class="rating-number">
+                                4.9
+                            </span>
+
+                            <span class="stars">
+                                ★★★★★
+                            </span>
+
+                            <span>
+                                (18,562)
+                            </span>
+
+                        </div>
+
+                        <div class="price">
+
+                            <span class="current-price">
+                                ₹399.00
+                            </span>
+
+                            <span class="old-price">
+                                ₹2,799.00
+                            </span>
+
+                        </div>
+
+                        <div class="badges">
+
+                            <span class="premium">
+                                ✧ Premium
+                            </span>
+
+                            <span class="bestseller">
+                                Bestseller
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- RIGHT ARROW -->
+
+                <button class="slider-btn right-arrow"
+                    id="rightArrow">
+
+                    <i class="fa-solid fa-chevron-right"></i>
+
+                </button>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ================= POPULAR TOPICS ================= -->
+
+    <section class="popular-topics-section">
+
+        <h2>Popular Topics</h2>
+
+
+        <div class="topics-wrapper">
+
+
+            <!-- LEFT ARROW -->
+
+            <button class="topic-arrow left-topic-arrow"
+                id="leftTopicArrow">
+
+                <i class="fa-solid fa-chevron-left"></i>
+
+            </button>
+
+
+            <!-- TOPICS -->
+
+            <div class="topics-container"
+                id="topicsContainer">
+
+
+                <button class="topic-box">
+                    Generative AI
+                </button>
+
+
+                <button class="topic-box">
+                    IT Certifications
+                </button>
+
+
+                <button class="topic-box">
+                    Data Science
+                </button>
+
+
+                <button class="topic-box">
+                    ChatGPT
+                </button>
+
+
+                <button class="topic-box">
+                    Prompt Engineering
+                </button>
+
+
+                <!-- Extra topics -->
+
+                <button class="topic-box">
+                    Web Development
+                </button>
+
+
+                <button class="topic-box">
+                    Python
+                </button>
+
+
+                <button class="topic-box">
+                    JavaScript
+                </button>
+
+
+                <button class="topic-box">
+                    Machine Learning
+                </button>
+
+
+                <button class="topic-box">
+                    Cyber Security
+                </button>
+
+
+            </div>
+
+
+            <!-- RIGHT ARROW -->
+
+            <button class="topic-arrow right-topic-arrow"
+                id="rightTopicArrow">
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+            </button>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= UDEMY BUSINESS ================= -->
+
+    <section class="business-section">
+
+
+        <!-- COMPANY AREA -->
+
+        <div class="company-section">
+
+
+            <h2>
+                Top companies choose
+                <span>Udemy Business</span>
+                to build in-demand career skills.
+            </h2>
+
+
+            <div class="company-logos">
+
+                <div class="company-logo nasdaq">
+                    <span class="nasdaq-symbol">N</span>
+                    Nasdaq
+                </div>
+
+
+                <div class="company-logo volkswagen">
+                    <span class="vw-circle">VW</span>
+                </div>
+
+
+                <div class="company-logo netapp">
+                    <span class="netapp-icon">▮▮</span>
+                    NetApp
+                </div>
+
+
+                <div class="company-logo eventbrite">
+                    eventbrite
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="business-line"></div>
+
+
+
+        <!-- SKILLS AREA -->
+
+        <div class="skills-section">
+
+            <h2>
+                Explore top skills and certifications
+            </h2>
+
+
+            <div class="skills-grid">
+
+
+                <!-- COLUMN 1 -->
+
+                <div class="skill-column">
+
+                    <h3>In-demand Careers</h3>
+
+                    <a href="#">Data Scientist</a>
+                    <a href="#">Full Stack Web Developer</a>
+                    <a href="#">Cloud Engineer</a>
+                    <a href="#">Project Manager</a>
+                    <a href="#">Game Developer</a>
+                    <a href="#">All Career Accelerators</a>
+
+                </div>
+
+
+
+                <!-- COLUMN 2 -->
+
+                <div class="skill-column">
+
+                    <h3>Web Development</h3>
+
+                    <a href="#">Web Development</a>
+                    <a href="#">JavaScript</a>
+                    <a href="#">React JS</a>
+                    <a href="#">Angular</a>
+                    <a href="#">Java</a>
+
+                </div>
+
+
+
+                <!-- COLUMN 3 -->
+
+                <div class="skill-column">
+
+                    <h3>IT Certifications</h3>
+
+                    <a href="#">Amazon AWS</a>
+                    <a href="#">AWS Certified Cloud Practitioner</a>
+                    <a href="#">AZ-900: Microsoft Azure Fundamentals</a>
+                    <a href="#">AWS Certified Solutions Architect - Associate</a>
+                    <a href="#">Kubernetes</a>
+
+                </div>
+
+
+
+                <!-- COLUMN 4 -->
+
+                <div class="skill-column">
+
+                    <h3>Leadership</h3>
+
+                    <a href="#">Leadership</a>
+                    <a href="#">Management Skills</a>
+                    <a href="#">Project Management</a>
+                    <a href="#">Personal Productivity</a>
+                    <a href="#">Emotional Intelligence</a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= CERTIFICATIONS FOOTER SECTION ================= -->
+
+<section class="footer-section">
+
+    <!-- TOP FOOTER LINKS -->
+
+    <div class="footer-top">
+
+        <!-- COLUMN 1 -->
+
+        <div class="footer-column">
+
+            <h3>Certifications by Skill</h3>
+
+            <a href="#">Cybersecurity Certification</a>
+            <a href="#">Project Management Certification</a>
+            <a href="#">Cloud Certification</a>
+            <a href="#">Data Analytics Certification</a>
+            <a href="#">HR Management Certification</a>
+            <a href="#">See all Certifications</a>
+
+        </div>
+
+
+        <!-- COLUMN 2 -->
+
+        <div class="footer-column">
+
+            <h3>Data Science</h3>
+
+            <a href="#">Data Science</a>
+            <a href="#">Python</a>
+            <a href="#">Machine Learning</a>
+            <a href="#">ChatGPT</a>
+            <a href="#">Deep Learning</a>
+
+        </div>
+
+
+        <!-- COLUMN 3 -->
+
+        <div class="footer-column">
+
+            <h3>Communication</h3>
+
+            <a href="#">Communication Skills</a>
+            <a href="#">Presentation Skills</a>
+            <a href="#">Public Speaking</a>
+            <a href="#">Writing</a>
+            <a href="#">PowerPoint</a>
+
+        </div>
+
+
+        <!-- COLUMN 4 -->
+
+        <div class="footer-column">
+
+            <h3>Business Analytics &amp; Intelligence</h3>
+
+            <a href="#">Microsoft Excel</a>
+            <a href="#">SQL</a>
+            <a href="#">Microsoft Power BI</a>
+            <a href="#">Data Analysis</a>
+            <a href="#">Business Analysis</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- SECOND FOOTER AREA -->
+
+    <div class="footer-middle">
+
+        <!-- COLUMN 1 -->
+
+        <div class="footer-column">
+
+            <h3>About</h3>
+
+            <a href="#">About us</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact us</a>
+            <a href="#">Blog</a>
+            <a href="#">Investors</a>
+            <a href="#">Find more on Coursera</a>
+
+        </div>
+
+
+        <!-- COLUMN 2 -->
+
+        <div class="footer-column">
+
+            <h3>Discover Udemy</h3>
+
+            <a href="#">Get the app</a>
+            <a href="#">Teach on Udemy</a>
+            <a href="#">Plans and Pricing</a>
+            <a href="#">Affiliate</a>
+            <a href="#">Help and Support</a>
+
+        </div>
+
+
+        <!-- COLUMN 3 -->
+
+        <div class="footer-column">
+
+            <h3>Udemy for Business</h3>
+
+            <a href="#">Udemy Business</a>
+
+        </div>
+
+
+        <!-- COLUMN 4 -->
+
+        <div class="footer-column">
+
+            <h3>Legal &amp; Accessibility</h3>
+
+            <a href="#">Accessibility statement</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Sitemap</a>
+            <a href="#">Terms</a>
+
+        </div>
+
+    </div>
+
+
+    <!-- BOTTOM FOOTER -->
+
+    <div class="footer-bottom">
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+                <span class="logo-mark">⌃</span>udemy
+            </div>
+
+            <span class="copyright">
+                © 2026 Udemy, Inc.
+            </span>
+
+        </div>
+
+
+        <div class="cookie-settings">
+            Cookie settings
+        </div>
+
+
+        <div class="footer-language">
+
+            <i class="fa-solid fa-globe"></i>
+
+            <span>English</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- JavaScript -->
+
+    <script src="shopCart.js"></script>
+
+
+</body>
+
+</html>
