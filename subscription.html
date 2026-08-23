@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy Subscription</title>
+    <link rel="stylesheet" href="subscription.css">
+</head>
+
+<body>
+
+<header class="subscription-header">
+    <a href="subscription.html" class="logo">udemy</a>
+    <nav class="header-nav">
+        <a href="#plans">Plans</a>
+        <a href="#basic">Basic</a>
+        <a href="#standard">Standard</a>
+        <a href="#premium">Premium</a>
+    </nav>
+</header>
+
+<section class="subscription-hero">
+    <h1>Choose the right plan for you</h1>
+    <p>
+        Learn from thousands of courses and develop
+        skills that help you achieve your goals.
+    </p>
+
+    <div class="billing-toggle">
+        <button id="monthlyBtn" class="active" onclick="changeBilling('monthly')">
+            Monthly
+        </button>
+        <button id="yearlyBtn" onclick="changeBilling('yearly')">
+            Yearly
+        </button>
+    </div>
+</section>
+
+<section class="plans" id="plans">
+
+    <div class="plan-card" id="basic">
+        <h2>Basic</h2>
+        <p class="plan-description">Perfect for beginners</p>
+        <div class="price">
+            ₹<span id="basicPrice">499</span>
+            <small id="basicPeriod">/month</small>
+        </div>
+        <a href="#subscriptionMessage" onclick="subscribe('Basic')" class="subscribe-btn">Subscribe</a>
+        <ul>
+            <li>✓ Access to 1,000+ courses</li>
+            <li>✓ Mobile access</li>
+            <li>✓ Course certificates</li>
+            <li>✓ Basic support</li>
+        </ul>
+    </div>
+
+    <div class="plan-card popular" id="standard">
+        <div class="popular-label">MOST POPULAR</div>
+        <h2>Standard</h2>
+        <p class="plan-description">Best for active learners</p>
+        <div class="price">
+            ₹<span id="standardPrice">799</span>
+            <small id="standardPeriod">/month</small>
+        </div>
+        <a href="#subscriptionMessage" onclick="subscribe('Standard')" class="subscribe-btn">Subscribe</a>
+        <ul>
+            <li>✓ Access to 5,000+ courses</li>
+            <li>✓ Mobile and desktop access</li>
+            <li>✓ Course certificates</li>
+            <li>✓ Download courses</li>
+            <li>✓ Priority support</li>
+        </ul>
+    </div>
+
+    <div class="plan-card" id="premium">
+        <h2>Premium</h2>
+        <p class="plan-description">For serious professionals</p>
+        <div class="price">
+            ₹<span id="premiumPrice">1199</span>
+            <small id="premiumPeriod">/month</small>
+        </div>
+        <a href="#subscriptionMessage" onclick="subscribe('Premium')" class="subscribe-btn">Subscribe</a>
+        <ul>
+            <li>✓ Unlimited course access</li>
+            <li>✓ All premium courses</li>
+            <li>✓ Course certificates</li>
+            <li>✓ Download courses</li>
+            <li>✓ Priority support</li>
+            <li>✓ Career resources</li>
+        </ul>
+    </div>
+
+</section>
+
+<div id="subscriptionMessage" class="subscription-message"></div>
+
+<script src="subscription.js"></script>
+
+</body>
+</html>
